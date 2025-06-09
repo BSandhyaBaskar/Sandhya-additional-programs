@@ -1,0 +1,37 @@
+package sampleprograms;
+
+public class CopyConstructor {
+
+
+
+    String language;
+	String name;
+    int year;
+              
+              CopyConstructor(String name,int year,String lang){
+            	  this.name=name;
+            	  this.year=year;
+            	  this.language=lang;
+		
+	}
+              CopyConstructor(CopyConstructor copy){
+            	  this.name=copy.name;
+            	  this.year=copy.year;
+            	  this.language=copy.language;
+              }
+	
+   void Display() {
+	   System.out.println("Userdefined"+" "+name+" "+year);
+   }
+              
+              
+	public static void main(String[] args) {
+		System.out.println("Original Constructor");
+		CopyConstructor ref=new CopyConstructor("Java",1995,"Programming");
+        ref.Display();
+        System.out.println("copy constructor");
+        CopyConstructor ref2= new CopyConstructor(ref);
+        ref2.Display();
+	}
+
+}
