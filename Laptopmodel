@@ -1,0 +1,28 @@
+package sampleprograms;
+
+public class Laptopmodel {
+	 
+	   
+	    private String modelName;
+	    private int ramSize;
+
+	    
+	    public Laptopmodel(String modelName, int ramSize) {
+	        this.modelName = modelName;
+	        this.ramSize = ramSize;
+	    }
+
+	    
+	    public void display() {
+	        System.out.println("Laptop Model: " + modelName);
+	        System.out.println("RAM Size: " + ramSize + " GB");
+	    }
+
+	   
+	    public static void main(String[] args) {
+	        Laptopmodel laptop1 = new Laptopmodel("HP", 8);
+	        laptop1.display();
+	    }
+	}
+
+
