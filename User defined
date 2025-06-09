@@ -1,0 +1,26 @@
+package sampleprograms;
+
+public class Userdefined {
+    String language;
+	String name;
+    int year;
+              
+              Userdefined(String name,int year,String lang){
+            	  this.name=name;
+            	  this.year=year;
+            	  this.language=lang;
+		System.out.println("Userdefined"+" "+name+" "+year+" "+lang);
+	}
+	
+   void Display() {
+	   System.out.println("Userdefined"+" "+name+" "+year);
+   }
+              
+              
+	public static void main(String[] args) {
+		
+		Userdefined ref=new Userdefined("Java",1995,"Programming");
+
+	}
+
+}
