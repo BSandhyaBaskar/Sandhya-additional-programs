@@ -1,0 +1,20 @@
+package sampleprograms;
+//superclass
+public class Singlelevel {
+ void Sandhya() {
+	 System.out.println("Bachelor of computer applications");
+ }
+
+}
+class subclass extends Singlelevel{
+	void Akalya() {
+		System.out.println("BCA");
+	}
+}
+class Main{
+public static void main(String[] args) {
+		subclass ref=new subclass();
+              ref.Sandhya();
+              ref.Akalya();
+	}
+}
