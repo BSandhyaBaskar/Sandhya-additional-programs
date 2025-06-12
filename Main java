@@ -1,0 +1,13 @@
+package Program;
+
+public class Main extends Thread {
+public void run() {
+	System.out.println("Haiii");
+}
+}
+class Excute{
+public static void main(String[] args) {
+	Main m=new Main();
+	m.start();
+}
+}
